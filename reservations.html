@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama Njeri's Kitchen | Booking Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap">
+    <style>
+        * {
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Playfair Display', 'Cormorant Garamond';
+            height: 130vh;
+            background-color: #f3e0d6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d4af37;
+        }
+
+        .book {
+            width: 100%;
+            height: 35rem;
+            border: 2px solid black;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .book div {
+            margin-bottom: 15px;
+        }
+
+        .book input {
+            outline: none;
+            border-radius: 5px;
+            height: 30px;
+            width: 98%;
+            border: 1px solid #0d0d0d;
+            color: #0d0d0d;
+        }
+
+        select {
+            height: 30px;
+            width: 98%;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #0d0d0d;
+            color: #0d0d0d;
+        }
+
+        textarea {
+            outline: none;
+            border: 1px solid #0d0d0d;
+            color: #0d0d0d;
+            font-family: 'Playfair Display', 'Cormorant Garamond';
+        }
+
+        .book button {
+            width: 100px;
+            height: 50px;
+            background-color: #d4af37;
+            border: none;
+            border-radius: 5px;
+            color: #f8f8f8;
+            margin-top: 15px;
+        }
+
+        .book button:active {
+            background-color: rgb(212, 175, 55, 0.5);
+        }
+
+        @media (min-width: 768px) {
+            .book {
+                width: 85%;
+            }
+
+            textarea {
+                width: 46em;
+                border-radius: 5px;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 3rem;
+            }
+            
+            .book {
+                width: 70%;
+            }
+
+            .book label {
+                font-size: 1.3rem;
+            }
+
+            .book input {
+                height: 40px;
+                font-size: 1.3rem;
+            }
+
+            select {
+                height: 40px;
+                font-size: 1.3rem;
+            }
+
+            textarea {
+                width: 52rem;
+                font-size: 1.3rem;
+                padding: 10px;
+            }
+
+            .book button {
+            width: 150px;
+            height: 60px;
+            font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>BOOK A TABLE NOW!</h1>
+    <div class="book">
+        <form action="mailto:pabloevra27@gmail.com">
+            <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="e.g., John Doe" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="number" pattern="[0-9]{10}" placeholder="e.g., 0712345678" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="e.g., johndoe01@gmail.com" required>
+            </div>
+
+            <div>
+                <label for="booking-date">Date:</label>
+                <input type="date" id="booking-date" name="booking-date" min="2026-05-03" required>
+            </div>
+
+            <div>
+                <label for="booking-time">Time:</label>
+                <input type="time" id="booking-time" name="booking-time" min="8:30" max="18:00">
+            </div>
+
+            <div>
+                <select>
+                    <option>1 Person</option>
+                    <option selected>2 People</option>
+                    <option>3 People</option>
+                    <option>4 People</option>
+                    <option>5 People</option>
+                    <option>6 People</option>
+                    <option>7 People</option>
+                    <option>8 People</option>
+                    <option>9 People</option>
+                    <option>10 People</option>
+                    <option>11 or more People</option>
+                </select>
+            </div>
+
+            <div>
+                <select>
+                    <option disabled selected>--SELECT REASON--</option>
+                    <option>Birthday</option>
+                    <option>Anniversary</option>
+                    <option>Business Meeting</option>
+                    <option>Wedding Reception</option>
+                    <option>Date Night</option>
+                    <option>Graduation</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <textarea placeholder="Specify Anything Here..." cols="39" rows="8"></textarea>
+
+            <button type="submit">Book A Table</button>
+        </form>
+    </div>
+</body>
+</html>
