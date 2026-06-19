@@ -183,21 +183,23 @@
     <section id="contact">
         <h2>HOLA AT US!</h2>
         <div class="hola">
-            <form>
+            <form action="mailto:pabloevra27@gmail.com" method="POST" enctype="text/plain">
                 <div>
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" placeholder="e.g., John Doe" required>
+                <input type="text" id="name" name="name" placeholder="e.g., John Doe" required>
                 </div>
 
                 <div>
                 <label for="email">Email Address:</label>
-                <input type="text" id="email" placeholder="e.g., johndoe01@gmail.com" required>
+                <input type="email" id="email" name="email" placeholder="e.g., johndoe01@gmail.com" required>
                 </div>
-                <textarea placeholder="Write Your Message..." required></textarea>
+                <textarea name="message" placeholder="Write Your Message..." required></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
     </section>
+</body>
+</html>
     <footer id="foot">
         <p>&copy Copyright 2026. All Rights Reserved</p>
         <p>Mama Njeri's Kitchen</p>

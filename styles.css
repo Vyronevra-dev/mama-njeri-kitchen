@@ -652,3 +652,52 @@ form button:active {
 #foot a {
     color: #0d0d0d;
 }
+
+@media (min-width: 1024px) {
+    .hola {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.9rem;
+        padding: 20px;
+    }
+
+    textarea {
+        height: 260px;
+        font-size: 1.2rem;
+    }
+
+    form button {
+        width: 100px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    #contact {
+        margin-top: -10px;
+    }
+}
+
+#foot {
+    background-color: #f3e0d6;
+    height: 45vh;
+    text-align: center;
+    padding-top: 50px;
+    color: #0d0d0d;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#foot img {
+    width: 50px;
+    height: 50px;
+}
+
+#foot svg {
+    width: 30px;
+    height: 30px;
+}
+
+#foot a {
+    color: #0d0d0d;
+}
